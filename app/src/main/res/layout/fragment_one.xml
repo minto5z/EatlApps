@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/apartment_fragment"
+        android:orientation="vertical"
+    android:padding="15dp"
+        tools:context="com.blogspot.larn4android.eatlapps.fragments.OneFragment"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="আপনার শহর দিন :"
+            android:layout_marginBottom="5dp"
+            />
+        <Spinner
+            android:id="@+id/rent_district_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="আপনার এলাকা দিন :"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/rent_thana_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:text="BDT 0"
+                android:id="@+id/tv_bdtmin"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="BDT 100,000,000"
+                android:layout_weight="1"
+                android:id="@+id/tv_bdtmax"
+                android:layout_marginLeft="70dp"
+                android:layout_height="match_parent" >
+            </TextView>
+
+        </LinearLayout>
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:text="0 sqft"
+                android:id="@+id/tv_sqftmin"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="20,000 sqft"
+                android:id="@+id/tv_sqftmax"
+                android:layout_weight="1"
+                android:layout_marginLeft="70dp"
+                android:layout_height="match_parent" >
+            </TextView>
+
+        </LinearLayout>
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeSeekbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_rent_search"
+            android:text="search"/>
+    </LinearLayout>

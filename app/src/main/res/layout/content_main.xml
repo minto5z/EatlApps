@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/background_light"
+    tools:context="com.blogspot.larn4android.eatlapps.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="@color/colorPrimary"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleMarginEnd="64dp">
+
+                <ImageView
+                    android:src="@drawable/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:transitionName="element1"
+                    app:layout_collapseMode="parallax"/>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:elevation="0dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_width="match_parent"
+                    android:minHeight="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                    app:layout_collapseMode="pin"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3" >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:id="@+id/btn_apartment"
+                                android:text="আপাটমেন্ট ও ফ্ল্যাট"
+                                android:onClick="onClick"
+                                android:drawableTop="@drawable/btnhome"
+                            />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:background="@android:color/darker_gray"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:text="কমাসিয়াল স্পেস"
+                                android:drawableTop="@drawable/commercial"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:text="বাড়ি"
+                                android:drawableTop="@drawable/commercial"
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                android:text="মেস"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:drawableTop="@drawable/commercial"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:background="@android:color/darker_gray"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                android:text="হোটেল ও মোটেল"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:drawableTop="@drawable/btnhome"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                android:text="দোকান"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:drawableTop="@drawable/btnhome"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:paddingBottom="2dp"
+                        android:layout_weight="0.30" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                android:text="পাকিং"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:drawableTop="@drawable/btnhome"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                android:text="জমি"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:drawableTop="@drawable/btnhome"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="140dp"
+                                android:text="রুম"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:drawableTop="@drawable/btnhome"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.design.widget.CoordinatorLayout>

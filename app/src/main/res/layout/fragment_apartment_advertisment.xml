@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:padding="10dp"
+    tools:context="com.blogspot.larn4android.eatlapps.fragments.ThreeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/apartment_fragment"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="আপনার শহর দিন :"
+            android:layout_marginBottom="5dp"
+            />
+        <Spinner
+            android:id="@+id/district_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="আপনার এলাকা দিন :"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/thana_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="বিক্রয় / ভাড়া :"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/rent_sell_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="নাম :"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/et_companyName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="ফোন নাম্বার  :"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal|numberSigned"
+                android:id="@+id/et_phoneNumber"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Taka :"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal|numberSigned"
+                android:id="@+id/et_taka"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sqft  :"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal|numberSigned"
+                android:id="@+id/et_sqft"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Available From :"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/et_availableFrom"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="প্রপার্টির বিস্তারিত তথ্য "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/et_details"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="প্রপার্টির ছবি দিন  "/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:id="@+id/btn_imageOne"
+                android:src="@drawable/ic_menu_camera"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:id="@+id/btn_submitted"
+            android:gravity="center"
+            android:text="জমা দিন"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "78546082736",
+    "firebase_url": "https://eatlapps-e19ef.firebaseio.com",
+    "project_id": "eatlapps-e19ef",
+    "storage_bucket": "eatlapps-e19ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78546082736:android:41d0aad024c2dd62",
+        "android_client_info": {
+          "package_name": "com.blogspot.larn4android.eatlapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78546082736-fum9ruei6nncsks3ni0at3bsvuis46jc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blogspot.larn4android.eatlapps",
+            "certificate_hash": "1EF8DD373DD6A02669BC0291BF2F9D0D8BA56ED8"
+          }
+        },
+        {
+          "client_id": "78546082736-us06up8buj8f34vdehg5lokh6al1foqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtZjfTgvj2DOKtFCNwh9FDcQpAP0yr1UE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78546082736-us06up8buj8f34vdehg5lokh6al1foqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
